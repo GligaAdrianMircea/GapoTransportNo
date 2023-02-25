@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GapoTransportNo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./Images/gapologosmall.png" />
+    <link rel="apple-touch-icon" href="./Images/gapologosmall.png" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+      <nav>
+        <a href="#home" class="nav-text home">Home</a>
+        <a href="#about" class="nav-text about">About</a>
+        <a href="#contact" class="nav-text contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div class="top" id="home">
+        <div class="top-left">
+          <div class="top-position">
+            <div class="top-text">BIGGER. BETTER. TOGETHER.</div>
+            <a href="#contact" class="top-btn">Contact Us!</a>
+          </div>
+        </div>
+        <div class="img-container first">
+          <div class="first-img"></div>
+          <!-- <div class="second-img"></div> -->
+        </div>
+      </div>
+      <div class="top middle" id="about">
+        <div class="top-left">
+          <div class="top-position">
+            <div class="top-text-about">About</div>
+            <div class="top-text-min">
+              Gapo Transport is a new firm established in 2022 with 100% privat
+              capital, located in the south of Norway - Kristiansand specialized
+              in cold transportation with coolers on long distances. We cover
+              transport to Oslo, in the north of Norway, Tromso, Finmark,
+              Lofoten, to and from Denmark, Sweden and Finland.
+            </div>
+          </div>
+        </div>
+        <div class="img-container">
+          <!-- <div class="first-sec-img"></div> -->
+          <div class="second-sec-img"></div>
+        </div>
+      </div>
+      <div class="footer" id="contact">
+        <div class="main-title">Contact Us</div>
+        <form
+          action="https://formsubmit.co/gapotransport@gmail.com"
+          method="POST"
+        >
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none" />
+          <!-- Disable Capcha -->
+          <input type="hidden" name="_captcha" value="false" />
+          <!-- Succes Page -->
+          <input
+            type="hidden"
+            name="_next"
+            value="https://gopotransport.no/success.html"
+          />
+          <div class="main-name">
+            <input
+              type="text"
+              id="name"
+              class="main-input"
+              name="Name"
+              required
+              placeholder="Name / Navn"
+            />
+            <input
+              type="text"
+              class="main-input"
+              name="Last-Name"
+              placeholder="Last Name / Etternavn"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="main-input"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              class="main-input"
+              required
+            />
+            <textarea
+              class="main-textarea"
+              placeholder="Text..."
+              name="Text"
+              required
+            ></textarea>
+          </div>
+          <button class="main-btn">Send</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <div class="footer-title where">Where to find us?</div>
+        <div class="footer-text">Email: gapotransport@gmail.com</div>
+        <div class="footer-text">Phone: +47.919.95.635</div>
+        <div class="footer-text">
+          Adress: 4656 Hamresanden-Kristiansand, Norway
+        </div>
+      </div>
+    </footer>
+    <div class="lower">
+      Copyright &#169; <span id="year"></span> Gapotransport All rigths
+      reserved.
+    </div>
+    <div class="change-container">
+      <div class="cursor"></div>
+      <div class="change-text">EN</div>
+      <div class="change-text">NO</div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
